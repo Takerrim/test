@@ -1,0 +1,17 @@
+<%- include('./includes/head.ejs') %>
+
+    </head>
+    <body>
+      <%- include('./includes/navigation.ejs') %>
+      <% if (user) {%>
+      <div class="centered">
+        <h2>Имя пользователя: <span><%= user.name %></span></h2>
+        <h2>Электронный адрес пользователя: <span><%= user.email %></span> </h2>
+      </div>
+    <% } else { %>
+      <div class="centered">
+        <h2>Нету информации о пользователи или он не авторизован</h2>
+      </div>
+      <% } %>
+    </body>
+</html>

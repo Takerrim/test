@@ -1,0 +1,14 @@
+<header class="main-header">
+  <% if(!isAuthenticated) { %>
+    <ul class="nav-block">
+      <li><a href="/login" class="main-ref <%= path=== '/login' ? 'active': ''%>">Войти</a></li>
+      <li><a href="/signup" class="main-ref <%= path=== '/signup' ? 'active': ''%>">Зарегистрироваться</a></li>
+    <% } else { %>
+      <li class="main-ref">
+        <form action="/logout" method="POST">               
+          <button type="submit" class="main-ref logout-ref">Выйти</button>
+        </form>
+      </li>
+        <% } %>
+    </ul>
+</header>

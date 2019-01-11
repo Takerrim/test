@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/form.css">
+
+    <body>
+          <%- include('../includes/navigation.ejs') %>
+
+      <% if (errorMessage) { %>
+        <div class="error-block">
+        <%=  errorMessage %>
+        </div>
+      <% } %>
+      <form action="/signup" method="POST" class="main-form">
+        <label for="name">Введите имя</label>
+          <input type="text" id="name" name="nameUser">
+          <label for="emailU">Введите электронную почту</label>
+          <input type="email" id="emailU" name="email">
+          <label for="passU">Введите пароль</label>
+          <input type="password" id="passU" name="password">             
+          <button type="submit" class="submit">Зарегистрироваться</button>
+      </form>
+    </body>
+<html>

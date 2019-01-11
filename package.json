@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "10.9.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.0.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.15.0",
+    "mongoose": "^5.4.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "NODE_ENV=production MONGO_USER=Taker MONGO_PASSWORD=nornor35 MONGO_DEFAULT_DATABASE=registration node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

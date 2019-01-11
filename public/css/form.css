@@ -1,0 +1,55 @@
+.main-form {
+  width: 250px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgb(17, 173, 101);
+  border-radius: 5px;
+  padding: 10px;
+}
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.submit {
+  margin-top: 5px;
+  padding: 5px 0;
+  font-size: 1.2em;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.submit:hover {
+  color: rgb(17, 173, 101);
+  border: 1px solid rgb(17, 173, 101);
+}
+
+.submit-product {
+  margin-top: 15px;
+}
+
+.centered {
+  width: 8.5%;
+  margin: auto;
+}
+
+.error-block {
+  color: #ffffff;
+  text-align: center;
+  width: 20%;
+  margin: 10px auto;
+  border-radius: 3px;
+  padding: 0.5rem;
+  background-color: rgb(223, 108, 108);
+  border: 1px solid rgb(243, 11, 11)
+}
+
+#image-prod {
+  border: 1px solid gray;
+}

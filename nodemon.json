@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USER": "Taker",
+    "MONGO_PASSWORD": "nornor35",
+    "MONGO_DEFAULT_DATABASE": "registration"
+  }
+}
